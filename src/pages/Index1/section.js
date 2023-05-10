@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
-
-//Importing Modal
-import ModalSection from "../../components/common/ModalSection";
 
 class Section extends Component {
   constructor() {
@@ -46,15 +42,6 @@ class Section extends Component {
                       enjoy a seamless, ad-free streaming experience that's
                       tailored to you.
                     </p>
-                    <p className="play-shadow mt-4">
-                      <Link
-                        to="#"
-                        onClick={this.callModal}
-                        className="play-btn video-play-icon"
-                      >
-                        <i className="mdi mdi-play text-center"></i>
-                      </Link>
-                    </p>
                   </Col>
                 </Row>
               </Container>
@@ -63,13 +50,6 @@ class Section extends Component {
           <div className="bg-pattern-effect">
             <img src="assets/images/bg-pattern.png" alt="dorsin" />
           </div>
-          {/* Render ModalSection Component for Modal */}
-          <ModalSection
-            channel="vimeo"
-            videoId="99025203"
-            closeModal={this.closeModal}
-            isOpen={this.state.isOpen}
-          />
         </section>
       </React.Fragment>
     );

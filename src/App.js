@@ -1,14 +1,14 @@
 import React from "react";
-import routes from "./routes";
+import Index1 from './pages/Index1/Index1.js'
+import Index2 from './pages/Index1/Index2.js'
 import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <React.Fragment>
       <Routes>
-        {routes.map((route, idx) => (
-          <Route path={route.path} element={route.component} key={idx} />
-        ))}
+        <Route path='/' element={<Index1 />} />
+        <Route path='/special' element={<Index2 />} />
       </Routes>
     </React.Fragment>
   );

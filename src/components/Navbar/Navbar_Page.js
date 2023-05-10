@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Navigate } from "react-router-dom";
 import {
   Nav,
   NavbarBrand,
@@ -92,6 +93,7 @@ class NavbarPage extends Component {
                           color="none"
                           type="button"
                           className="btn btn-primary navbar-btn btn-rounded waves-effect waves-light"
+                          onClick={()=>{<Navigate to="/special"/>}}
                         >
                           Start Listening
                         </Button>
