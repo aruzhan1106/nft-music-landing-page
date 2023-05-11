@@ -5,7 +5,7 @@ import Section from "./section";
 import Service from "../../components/Service/service";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import WebsiteDesc from "../../components/WebsiteDesc/WebsiteDesc";
-import Pricing from "../../components/Pricing/pricing";
+// import Pricing from "../../components/Pricing/pricing";
 import Team from "../../components/Team/Team";
 import Process from "../../components/Process/Process";
 import Testimonials from "../../components/Testimonials/Testimonials";
@@ -19,11 +19,9 @@ class Index1 extends Component {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "home", navheading: "Home" },
-        { id: 2, idnm: "services", navheading: "Services" },
-        { id: 3, idnm: "features", navheading: "Features" },
-        { id: 4, idnm: "pricing", navheading: "Pricing" },
-        { id: 5, idnm: "team", navheading: "Team" },
+        { id: 1, idnm: "services", navheading: "Services" },
+        { id: 2, idnm: "features", navheading: "Features" },
+        { id: 3, idnm: "team", navheading: "Team" },
       ],
       navClass: "",
     };
@@ -51,7 +49,7 @@ class Index1 extends Component {
         <WebsiteDesc />
 
         {/* pricing */}
-        <Pricing />
+        {/* <Pricing /> */}
 
         {/* team */}
         <Team />

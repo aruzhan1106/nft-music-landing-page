@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Container, Row, Col, Form } from "reactstrap";
+// import { Link } from "react-router-dom";
+// import { Container, Row, Col, Form } from "reactstrap";
 
 //Import Footer link
 import FooterLinks from "./footer-links";
-import Switcher from "./Switcher";
+// import Switcher from "./Switcher";
 
 class Footer extends Component {
   state = {
@@ -40,7 +40,7 @@ class Footer extends Component {
   render() {
     return (
       <React.Fragment>
-        <footer className="footer">
+        {/* <footer className="footer">
           <Container>
             <Row>
               {this.state.links.map((fLink, key) => (
@@ -80,12 +80,12 @@ class Footer extends Component {
               </Col>
             </Row>
           </Container>
-        </footer>
+        </footer> */}
         {/* Render footer links */}
         <FooterLinks />
 
         {/* color switcher */}
-        <Switcher />
+        {/* <Switcher /> */}
       </React.Fragment>
     );
   }

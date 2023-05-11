@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Navigate } from "react-router-dom";
 import {
   Nav,
   NavbarBrand,
@@ -7,8 +6,7 @@ import {
   NavItem,
   NavLink,
   Container,
-  Collapse,
-  Button,
+  Collapse
 } from "reactstrap";
 
 import ScrollspyNav from "./scrollSpy";
@@ -86,20 +84,21 @@ class NavbarPage extends Component {
                       </NavItem>
                     ))}
                   </Nav>
-                  <div className="nav-button ms-auto">
+                  {/* <div className="nav-button ms-auto">
                     <Nav navbar className="navbar-end">
                       <li>
-                        <Button
-                          color="none"
-                          type="button"
-                          className="btn btn-primary navbar-btn btn-rounded waves-effect waves-light"
-                          onClick={()=>{<Navigate to="/special"/>}}
-                        >
-                          Start Listening
-                        </Button>
+                        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                          <Button
+                            color="none"
+                            type="button"
+                            className="btn btn-primary navbar-btn btn-rounded waves-effect waves-light"
+                          >
+                            Start Listening
+                          </Button>
+                        </a>
                       </li>
                     </Nav>
-                  </div>
+                  </div> */}
                 </ScrollspyNav>
               </Collapse>
             </Container>

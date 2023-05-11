@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 
 class Section extends Component {
   constructor() {
@@ -42,6 +42,16 @@ class Section extends Component {
                       enjoy a seamless, ad-free streaming experience that's
                       tailored to you.
                     </p>
+                    <div style={{paddingTop: '20px'}}>
+                    <a href="https://chorus-app.vercel.app" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        color="none"
+                        type="button"
+                        className="btn btn-primary navbar-btn btn-rounded waves-effect waves-light">
+                        Start Listening
+                      </Button>
+                    </a>
+                    </div>
                   </Col>
                 </Row>
               </Container>
