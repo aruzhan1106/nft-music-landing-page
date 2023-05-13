@@ -4,11 +4,11 @@ import NavbarPage from "../../components/Navbar/Navbar_Page";
 import Section from "./section";
 import Service from "../../components/Service/service";
 import AboutUs from "../../components/AboutUs/AboutUs";
-import WebsiteDesc from "../../components/WebsiteDesc/WebsiteDesc";
+// import WebsiteDesc from "../../components/WebsiteDesc/WebsiteDesc";
 // import Pricing from "../../components/Pricing/pricing";
-import Team from "../../components/Team/Team";
+// import Team from "../../components/Team/Team";
 import Process from "../../components/Process/Process";
-import Testimonials from "../../components/Testimonials/Testimonials";
+// import Testimonials from "../../components/Testimonials/Testimonials";
 import GetStart from "../../components/GetStart/GetStart";
 
 import Social from "../../components/Social/Social";
@@ -20,8 +20,8 @@ class Index1 extends Component {
     this.state = {
       navItems: [
         { id: 1, idnm: "services", navheading: "Services" },
-        { id: 2, idnm: "features", navheading: "Features" },
-        { id: 3, idnm: "team", navheading: "Team" },
+        { id: 2, idnm: "features", navheading: "About us" },
+        // { id: 3, idnm: "team", navheading: "Team" },
       ],
       navClass: "",
     };
@@ -46,19 +46,19 @@ class Index1 extends Component {
         <AboutUs />
 
         {/* website description */}
-        <WebsiteDesc />
+        {/* <WebsiteDesc /> */}
 
         {/* pricing */}
         {/* <Pricing /> */}
 
         {/* team */}
-        <Team />
+        {/* <Team /> */}
 
         {/* process */}
         <Process />
 
         {/* testimonial */}
-        <Testimonials />
+        {/* <Testimonials /> */}
 
         {/* get started */}
         <GetStart />

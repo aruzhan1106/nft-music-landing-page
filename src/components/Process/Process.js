@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
-
 //Import Section Title
 import SectionTitle from "../common/section-title";
 import ProcessBox from "./ProcessBox";
@@ -12,19 +10,19 @@ class Process extends Component {
     this.state = {
       processes: [
         {
-          icon: "pe-7s-pen",
+          icon: "pe-7s-music",
           title: "Discover music",
-          desc: "Lorem ipsum",
+          desc: "",
         },
         {
-          icon: "pe-7s-id",
-          title: "Buy music nfts and resell for a higer price",
-          desc: "Little Blind Text didn’t listen.",
+          icon: "pe-7s-like",
+          title: "Buy music NFTs and resell for a higher price",
+          desc: "",
         },
         {
-          icon: "pe-7s-target",
+          icon: "pe-7s-star",
           title: "Earn ownership and ETH",
-          desc: "When she reached the first hills.",
+          desc: "",
         },
       ],
     };
@@ -37,8 +35,8 @@ class Process extends Component {
           <Container>
             {/* section title */}
             <SectionTitle
-              title="WORK PROCESS"
-              desc="In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the Proin vitae ipsum vel ex finibus semper design starts."
+              title="HOW IT WORKS"
+              // desc=""
             />
 
             <Row>
@@ -51,14 +49,14 @@ class Process extends Component {
             </Row>
             <Row className="mt-5">
               <ProcessBox processes={this.state.processes} />
-              <div className="text-center mx-auto">
-                <Link
-                  to="#"
+              {/* <div className="text-center mx-auto">
+                <a
+                  href="#"
                   className="btn btn-primary waves-light waves-effect mt-5"
                 >
                   Get Started <i className="mdi mdi-arrow-right"></i>
-                </Link>
-              </div>
+                </a>
+              </div> */}
             </Row>
           </Container>
         </section>

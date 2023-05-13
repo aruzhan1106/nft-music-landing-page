@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
 
 class GetStart extends Component {
   render() {
@@ -15,15 +14,14 @@ class GetStart extends Component {
               </h1>
               <div className="section-title-border mt-4 bg-white"></div>
               <p className="section-subtitle font-secondary text-white text-center pt-4">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.{" "}
+                Finally, a modern streaming service designed with artists in mind. Experience the freedom.{" "}
               </p>
-              <Link 
-                to="#"
+              <a 
+                href="https://chorus-app.vercel.app"
                 className="btn btn-white waves-effect mt-3 mb-4"
               >
-                Get Started <i className="mdi mdi-arrow-right"></i>{" "}
-              </Link>
+                Start listening <i className="mdi mdi-arrow-right"></i>{" "}
+              </a>
             </Col>
           </Row>
         </Container>
